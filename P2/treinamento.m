@@ -1,8 +1,8 @@
 %Aula Prática Perceptron - Aprendizagem Hebb
-function [w, runs] = ichi
+function [w] = treinamento
     clc;
     clearvars;
-    
+
     %Carregando o arquivo de treinamento
     file = load('t.txt');
 
@@ -12,7 +12,7 @@ function [w, runs] = ichi
     %Tamanho da matriz
     [xLines, xCols] = size(xValues);
 
-    %Adicionando a linha de -1
+    %Adicionando a coluna de -1
     xValues = [-ones(xLines, 1) xValues];
 
     %Copiando os valores dos resultados desejados.
