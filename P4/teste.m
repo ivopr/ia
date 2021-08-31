@@ -11,3 +11,6 @@ vet_saida = sim(net, vet_teste_entrada);
 erro_relativo = abs(vet_saida - vet_teste_desejado) ./ abs(vet_teste_desejado);
 
 [vet_saida' vet_teste_desejado' erro_relativo']
+
+disp("erm teste ");
+mean(erro_relativo)

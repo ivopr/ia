@@ -3,7 +3,7 @@ function y = teste
 	clearvars;
 
 	v = load('teste.txt');
-	[vLines, vCols] = size(v);
+	[vLines, ~] = size(v);
 	v = [-ones(vLines, 1) v];
 
 	w = treinamento;

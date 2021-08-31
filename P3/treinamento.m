@@ -36,6 +36,7 @@ while abs(eqm_atual - eqm_ant) >= p
 	eqm_atual = EQM(T, w, d);
 	erro(e) = eqm_atual;
 end
+
 [l, c] = size(erro);
 
 figure,
